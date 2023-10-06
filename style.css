@@ -1,0 +1,101 @@
+.img{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 50%;
+    color: aqua;
+    display: inline-block;
+    margin-left: 18.5px;
+    position: relative;
+    margin-top: 50px;
+}
+.img::before{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    scale: 0;
+    width: 200px;
+    content: '';
+    position: absolute;
+    height: 200px;
+    border-radius: 50%;
+    transition: .7s;
+}
+.img:hover::before{
+    scale: 1;
+}
+.m1::before{
+    content: '';
+    position: absolute;
+    background-image: url(ronaldo.jpeg);
+}
+.m1:hover::before{
+    transform: rotate(360deg);
+}
+.m2::before{
+    background-image: url(messi.jpeg);
+}
+.m2:hover::before{
+    transform: rotateY(360deg);
+}
+.m3::before{
+    background-image: url(vini.jpeg);
+}
+.m3:hover::before{
+    transform: rotateX(360deg);
+}
+.m4::before{
+    background-image: url(mbappe.jpeg);
+}
+.m4:hover::before{
+    transform: rotate(360deg);
+}
+.m5::before{
+    background-image: url(benzema.jpeg);
+}
+.m5:hover::before{
+    transform: rotateZ(360deg);
+}
+.m6::before{
+    background-image: url(marcelo.jpeg);
+}
+.m6:hover::before{
+    transform: rotateY(360deg);
+}
+.pn{
+    width: 100%;
+    background-color: lime;
+    height: 70px;
+    border: 2px solid white;
+    outline: 3px solid aqua;
+
+}
+.uj2{
+    margin-top: 237px;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.r{
+    margin-left: 77px;
+    margin-top: 84px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logo{
+    background-image: url(logo.jpeg);
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    border: 2px solid white;
+}
+.y{
+    overflow: auto;
+    height: 150px;
+    width: 100%;
+    border: 2px solid blue;
+    position: absolute;
+    width: 500px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 430px;
+    margin-top: 50px;
+}
